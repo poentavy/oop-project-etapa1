@@ -1,0 +1,12 @@
+Am folosit 2 design patterns: singleton pentru baza de date si command pentru
+action.
+Am facut o clasa de baza pentru pagina, care are un nume, o lista de pagini catre
+care poate merge utilizatorul de pe acea pagina, si un boolean care arata daca
+pagina are nevoie de autentificare pentru a intra pe ea.
+Dupa asta am facut cate o clasa pentru fiecare pagina si am adaugat actiunile
+on page ca methods in acea clasa.
+Actiunile le-am facut separat, si am facut pentru change page la see details
+caz aparte.
+Baza de date tine o stare curenta a sesiunii in sine si citeste tot inputul
+si il pune in clasele respective. De asemenea ea tine o lista de actiuni
+si cand dai aplicatiei run, atunci le executa pe rand.
